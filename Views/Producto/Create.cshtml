@@ -1,0 +1,19 @@
+@model web_veterinaria.Models.Producto
+
+<h2>Registrar Producto</h2>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label>Nombre:</label>
+        <input asp-for="Nombre" />
+    </div>
+    <div>
+        <label>Precio:</label>
+        <input asp-for="Precio" type="number" step="0.01" />
+    </div>
+    <div>
+        <label>Categoría:</label>
+        <input asp-for="Categoria" />
+    </div>
+    <button type="submit">Guardar</button>
+</form>
