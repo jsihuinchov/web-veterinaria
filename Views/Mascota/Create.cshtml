@@ -1,0 +1,23 @@
+@model web_veterinaria.Models.Mascota
+
+<h2>Registrar Mascota</h2>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label>Nombre:</label>
+        <input asp-for="Nombre" />
+    </div>
+    <div>
+        <label>Especie:</label>
+        <input asp-for="Especie" />
+    </div>
+    <div>
+        <label>Edad:</label>
+        <input asp-for="Edad" type="number" />
+    </div>
+    <div>
+        <label>Nombre del Dueño:</label>
+        <input asp-for="NombreDueño" />
+    </div>
+    <button type="submit">Guardar</button>
+</form>
